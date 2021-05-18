@@ -21,7 +21,7 @@ public class SwaggerConfig {
     public Docket apiDocket() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.nuvu.cliente.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("com.nuvu.project.controllers"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(getApiInfo())
